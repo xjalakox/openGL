@@ -16,6 +16,8 @@ import shaders.StaticShader;
 import textures.ModelTexture;
 
 public class MainGameLoop {
+	
+	//LEON DU SUCKST HARDCORE
 
 	public static void main(String[] args) {
 
