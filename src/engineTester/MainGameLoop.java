@@ -21,7 +21,7 @@ public class MainGameLoop {
 
 		DisplayManager.createDisplay();
 		
-		 Loader loader = new Loader();
+		Loader loader = new Loader();
 		
 		//ModelData data = OBJFileLoader.loadOBJ("");
 		
