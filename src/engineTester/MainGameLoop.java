@@ -63,7 +63,7 @@ public class MainGameLoop {
 			renderer.prepare();
 			shader.start();
 			shader.loadViewMatrix(camera);
-			renderer.render(entity,shader);
+			 renderer.render(entity,shader);
 			shader.stop();
 			DisplayManager.updateDisplay();
 			
