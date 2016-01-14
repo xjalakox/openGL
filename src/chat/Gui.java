@@ -21,15 +21,11 @@ import javax.swing.WindowConstants;
 public class Gui extends JFrame{
 
 	private JLabel Background;
-	public static JTextField Username_field;
+	public JTextField Username_field;
 	public JPasswordField password_field;
 	public JButton login;
 	public JLabel register;
 	
-	
-	public static String getJTextField(){
-		return Username_field.getText();
-	}
 	
 	public Gui(){
 		
@@ -45,19 +41,7 @@ public class Gui extends JFrame{
 		
 		JLabel Background = new JLabel((new ImageIcon(getClass().getResource("/resource/login.png"))));
 		Background.setBounds(0, 0, 800, 600);
-		
-		JButton login = new JButton("Login");
-		login.setBounds(290,410,230,40);
-		login.addActionListener(new ActionListener() {
-			 
-	            public void actionPerformed(ActionEvent e)
-	            {
-	        		Client c = new Client();
-	        		c.createGUI();
-	            	System.out.println("Hai");
-	            }
-	        }); 
-		
+
 		JTextField Username_field = new JTextField("Benutzername"); 
 		Username_field.setBounds(290,220,230,40);
 		Username_field.addMouseListener(new MouseAdapter(){
@@ -66,6 +50,16 @@ public class Gui extends JFrame{
             	Username_field.setText("");
             }
         });
+		
+		JButton login = new JButton("Login");
+		login.setBounds(290,410,230,40);
+		login.addActionListener(new ActionListener() {
+			 
+	            public void actionPerformed(ActionEvent e)
+	            {
+	            	System.out.println(Username_field.getText());
+	            }
+	        }); 
 		
 		
 		JPasswordField password_field = new JPasswordField("Passwort"); 
