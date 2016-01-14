@@ -37,10 +37,10 @@ public class Client {
 	PrintWriter writer;
 	BufferedReader reader;
 	
-	public static void main(String[] args) {
-		Client c = new Client();
-		c.createGUI();
-	}
+	//public static void main(String[] args) {
+		//Client c = new Client();
+		//c.createGUI();
+	//}
 	
 	public void createGUI() {
 		clientFrame = new JFrame("Chat of Jannik and Leon <3");

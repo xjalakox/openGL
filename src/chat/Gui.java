@@ -1,6 +1,8 @@
 package chat;
 import java.awt.Desktop;
 import java.awt.Toolkit;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.io.IOException;
@@ -41,6 +43,15 @@ public class Gui extends JFrame{
 		
 		JButton login = new JButton("Login");
 		login.setBounds(290,410,230,40);
+		login.addActionListener(new ActionListener() {
+			 
+	            public void actionPerformed(ActionEvent e)
+	            {
+	        		Client c = new Client();
+	        		c.createGUI();
+	            	System.out.println("Hai");
+	            }
+	        }); 
 		
 		JTextField Username_field = new JTextField("Benutzername"); 
 		Username_field.setBounds(290,220,230,40);
@@ -95,4 +106,8 @@ public class Gui extends JFrame{
 
 		
 	}	
+	
+	public static void main(String[] args) {
+		Gui gui = new Gui();
+	}
 }
