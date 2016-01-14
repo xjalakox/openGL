@@ -19,10 +19,15 @@ import javax.swing.WindowConstants;
 public class Gui extends JFrame{
 
 	private JLabel Background;
-	public JTextField Username_field;
+	public static JTextField Username_field;
 	public JPasswordField password_field;
 	public JButton login;
 	public JLabel register;
+	
+	
+	public static String getJTextField(){
+		return Username_field.getText();
+	}
 	
 	public Gui(){
 		
