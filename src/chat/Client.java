@@ -76,7 +76,7 @@ public class Client {
 		t.start();
 		
 		clientPanel.add(scrollPane_Messages);
-		clientPanel.add(textField_Username);
+		//clientPanel.add(textField_Username);
 		clientPanel.add(textField_ClientMessage);
 		clientPanel.add(button_SendMessage);
 		
